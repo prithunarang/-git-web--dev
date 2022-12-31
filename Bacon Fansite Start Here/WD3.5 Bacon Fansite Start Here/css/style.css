@@ -1,0 +1,74 @@
+h1 {
+  font-size: 50px;
+  color: blue;
+}
+
+.Mango {
+    padding: 50px;
+    background-color: #e67e22;
+    transition: transform .2s; /* Animation */
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    opacity: 0.7;
+}
+.bacon{
+    padding: 50px;
+    background-color:#e67e22;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    opacity: 0.7;
+    image-orientation: black;
+}
+h1:hover {
+color: #cf6d17;
+opacity: 100
+}
+p:hover{
+  color: red;
+  opacity: 0.5
+}
+
+img:hover {
+    opacity: 1;
+    transform: scale(1.03);
+    height: 195px;
+    width: 195px;
+    transition: transform 0.5s, opacity 0.5s;
+    background-color: #cf6d17;
+}
+.blurr {
+  width: 300px;
+  height: 200px;
+  display: inline-block;
+  margin: 4px;
+  position: relative;
+}
+.blurr {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  transition: .3s;
+}
+.blurr:hover img{
+  filter:blur(2px) brightness(60%);
+  box-shadow: 0 0 16px cyan;
+}
+
+.blurr :not(img){
+  position: absolute;
+  top:30%;
+  z-index:1;
+  color: red;
+  text-align: center;
+  width: 100%;
+  opacity:0;
+  transition: 3s;
+}
+.blurr h3{
+  top:50%
+}
+.blurr:hover :not(img){
+  opacity: 1;
+}
